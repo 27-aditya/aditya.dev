@@ -1,0 +1,22 @@
+---
+import ContentCard from "./ContentCard.astro";
+
+interface Props {
+  title?: string;
+  heading?: string;
+  body?: string;
+}
+
+const { title, heading ,body } = Astro.props;
+---
+
+<div>
+  {
+    <div class="p-4 border border-darkslate-400 bg-darkslate-500 rounded-xl m-4">
+      <h3>{heading}</h3>
+      <ContentCard title={title} body={body}>
+        <slot />
+      </ContentCard>
+    </div>
+  }
+</div>

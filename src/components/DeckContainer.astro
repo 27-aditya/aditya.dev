@@ -1,0 +1,29 @@
+---
+import IndexCard from './Cards/IndexCard.astro';
+import Button from './Button.astro';
+---
+
+<div class="p-2 my-5 mx-11">
+  <div class="grid grid-cols-6 grid-rows-6 gap-2">
+    <div class="col-span-4 row-span-2">
+      <IndexCard title="Yo I am Aditya Kamble" body='Content for Card 1' heading="Domain Expansion Aditya's Portfolio">
+        <p>sdfushdhfsidhfiusdhfui
+          sdohfdhsufhsiudfhiusdhfuishduifhsuidhfuisdhfiushduihsduihfiusdhuiisdhfuishdu
+          ifhsiudhfuihsduihiusd
+          hfiuhsdfuihsdiufhishfiusdhfuishdifhsdiuhfiuds
+          
+        </p>
+        <div class="mt-2 p-1 flex flex-row">
+          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="25px" width="25px"/></Button>
+          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" height="25px" width="25px" style="filter:invert(1);"/></Button>
+        </div>
+      </IndexCard>
+    </div>
+    <div class="col-span-2 row-span-3">
+      <IndexCard title='Card 2' body='Content for Card 2'/>
+    </div>
+    <div class="col-span-1 row-span-3">
+      <IndexCard title='Card 3' body='Content for Card 3'/>
+    </div>
+  </div>
+</div>
