@@ -12,8 +12,8 @@ const { title, heading ,body } = Astro.props;
 
 <div>
   {
-    <div class="p-4 border border-darkslate-400 bg-darkslate-500 rounded-xl m-4">
-      <h3>{heading}</h3>
+    <div class="p-4 border border-darkslate-400 bg-darkslate-500 rounded-xl m-1">
+      <h3 class="p-1 text-white">{heading}</h3>
       <ContentCard title={title} body={body}>
         <slot />
       </ContentCard>

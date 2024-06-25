@@ -1,0 +1,21 @@
+---
+import Button from '../Button.astro'
+
+interface Props {
+  project?: string;
+  description?: string;
+  stack?: string;
+  link?: string;
+}
+
+const { project, description, stack, link } = Astro.props;
+---
+
+<div>
+  <p class="text-white text-xl">{project}</p>
+  <p>{description}</p>
+  <p class="text-slate-300">Tech Stack: {stack}</p>
+  <div class="p-1">
+    <Button><a href="{link}"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="15px" width="15px" class="m-2 mx-4" style="filter:invert(1);"/></a></Button>
+  </div>
+</div>

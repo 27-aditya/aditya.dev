@@ -1,29 +1,51 @@
 ---
 import IndexCard from './Cards/IndexCard.astro';
 import Button from './Button.astro';
+import ProjectCard from './Cards/ProjectCard.astro';
 ---
 
 <div class="p-2 my-5 mx-11">
   <div class="grid grid-cols-6 grid-rows-6 gap-2">
-    <div class="col-span-4 row-span-2">
-      <IndexCard title="Yo I am Aditya Kamble" body='Content for Card 1' heading="Domain Expansion Aditya's Portfolio">
-        <p>sdfushdhfsidhfiusdhfui
-          sdohfdhsufhsiudfhiusdhfuishduifhsuidhfuisdhfiushduihsduihfiusdhuiisdhfuishdu
-          ifhsiudhfuihsduihiusd
-          hfiuhsdfuihsdiufhishfiusdhfuishdifhsdiuhfiuds
-          
-        </p>
+    <div class="col-span-4 row-span-1">
+      <IndexCard title="Yo I am Aditya Kamble" body='I like playing Indie games for a change of pace' heading="Domain Expansion Aditya's Portfolio">
+        <div class="flex m-4"></div>
         <div class="mt-2 p-1 flex flex-row">
-          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="25px" width="25px"/></Button>
-          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" height="25px" width="25px" style="filter:invert(1);"/></Button>
+          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="25px" width="25px" class="m-2 mx-4 p-0.5" style="filter:invert(1);"/></Button>
+          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" height="25px" width="25px" class="m-2 mx-4 p-0.5" style="filter:invert(1);"/></Button>
+          <Button><p class="text-sm m-2.5 text-white">Resume</p></Button>
         </div>
       </IndexCard>
     </div>
-    <div class="col-span-2 row-span-3">
-      <IndexCard title='Card 2' body='Content for Card 2'/>
+    <div class="col-span-2 row-span-3 text-white">
+      <IndexCard title='About Me' body='YO I am Aditya Kamble, a CSE undergrad from NITC. I primary work on software development and tinkering around with programs'>
+        <br/>
+        The tools that I work with are:
+        <ul class="list-disc list-inside">
+          <li>C, C++, Rust, Javascript, Python</li>
+          <li>Astro</li>
+          <li>ReactJs</li>
+          <li>PostgreSQL</li>
+          <li>Tailwind</li>
+          <li>NodeJs</li>
+        </ul>
+        <br/>
+        Beyond programming I like playing video games, I try out indie games on a regular basis and seldomly play AAA titles, I also play Chess
+      </IndexCard>
+
     </div>
-    <div class="col-span-1 row-span-3">
-      <IndexCard title='Card 3' body='Content for Card 3'/>
+    <div class="col-span-4 row-span-3">
+      <IndexCard title='Projects' body='Here are some of the projects I have worked upon:'>
+        <div class="h-64 overflow-y-auto">
+          <ul class="list-inside">
+            <li class="m-2">
+              <ProjectCard project="UniVerse" description='UniVerse is an anonymous threads posting app for college communities based on college id verification' stack='ReactJs, ViteJS, PostgreSQL, NodeJs, Javascript'></ProjectCard>
+            </li>
+            <li class="m-2">
+              <ProjectCard project='Rust Shell' description='Am implementation of Bash Shell written entirely in Rust.' stack="Rust"></ProjectCard>
+            </li>
+          </ul>
+        </div>
+      </IndexCard>
     </div>
   </div>
 </div>
