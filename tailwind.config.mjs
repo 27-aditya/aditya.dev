@@ -18,6 +18,9 @@ export default {
 					900: "#0B0B0B" /* Deeper and darker */,
 				},
 			},
+			fontFamily: {
+        mono: ['JetBrains Mono', 'monospace'],
+      },
 		},
 	},
 	plugins: [

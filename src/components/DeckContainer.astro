@@ -10,27 +10,27 @@ import CentralButton from './CentralButton.astro';
 <div class="px-1 py-3  mx-11">
   <div class="grid grid-cols-7  gap-4 grid-rows-subgrid flex-wrap">
     <div class="col-span-5 row-span-1">
-      <IndexCard   title="Yo I am Aditya Kamble." body='I like playing Chess for a change of pace & I am a CSE undergrad from NITC who primary works on software development and tinkering around with random programs.' heading="Domain Expansion Aditya's Portfolio">
+      <IndexCard title="Yo I am Aditya Kamble." body='I like playing Chess for a change of pace & I am a CSE undergrad from NITC who primary works on software development and tinkering around with random programs.' heading="Domain Expansion Aditya's Portfolio">
         <div class="flex flex-row "></div>
         <br/>
         <div class="mt-2 p-1 flex flex-row">
-          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="25px" width="25px" class="m-2 mx-4 p-0.5" style="filter:invert(1);"/></Button>
-          <Button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" height="25px" width="25px" class="m-2 mx-4 p-0.5" style="filter:invert(1);"/></Button>
-          <Button><p class="text-xs font-normal my-3 mx-2 text-white">Resume</p></Button>
+          <Button><a href="https://github.com/27-aditya"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="25px" width="25px" class="m-2 mx-4 p-0.5" style="filter:invert(1);"/></a></Button>
+          <Button><a href="https://www.linkedin.com/in/aditya-kamble27"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" height="25px" width="25px" class="m-2 mx-4 p-0.5" style="filter:invert(1);"/></a></Button>
+          <Button><a href="https://drive.google.com/file/d/1FSgLZJ1L-wtDK170f-nRczHfov9KCU3Q/view"><p class="text-xs font-normal my-3 mx-2 text-white">Resume</p></a></Button>
         </div>
       </IndexCard>
     </div>
     <div class="col-span-2 row-span-2 text-white font-light">
       <IndexCard title='My Stack' body='& tools.'>
-        <p class="my-5">I primarily work with the following languages, frameworks, databases and tools.</p>
+        <p class="my-2">I primarily work with the following languages, frameworks, databases and tools.</p>
         <ul class="list-inside">
-          <li><a class="font-extrabold">></a> C, C++, Rust, Javascript, Python</li>
-          <li><a class="font-extrabold">></a> Astro</li>
-          <li><a class="font-extrabold">></a> ReactJs</li>
-          <li><a class="font-extrabold">></a> PostgreSQL</li>
-          <li><a class="font-extrabold">></a> Tailwind</li>
-          <li><a class="font-extrabold">></a> Docker</li>
-          <li><a class="font-extrabold">></a> Git</li>
+          <li><a class="font-extrabold text-cyan-400">></a> C, C++, Rust, Javascript, Python</li>
+          <li><a class="font-extrabold text-cyan-400">></a> Astro</li>
+          <li><a class="font-extrabold text-cyan-400">></a> ReactJs</li>
+          <li><a class="font-extrabold text-cyan-400">></a> PostgreSQL</li>
+          <li><a class="font-extrabold text-cyan-400">></a> Tailwind</li>
+          <li><a class="font-extrabold text-cyan-400">></a> Docker</li>
+          <li><a class="font-extrabold text-cyan-400">></a> Git</li>
         </ul>
         <br/>
       </IndexCard>
@@ -40,10 +40,13 @@ import CentralButton from './CentralButton.astro';
         <div class="h-64 overflow-y-auto">
           <ul class="list-inside">
             <li class="m-2">
-              <ProjectCard project="UniVerse" description='UniVerse is an anonymous threads posting app for college communities based on college id verification' stack='ReactJs, ViteJS, PostgreSQL, NodeJs, Javascript'></ProjectCard>
+              <ProjectCard link='https://github.com/27-aditya/UniVerse' project="UniVerse" description='UniVerse is an anonymous threads posting app for college communities based on college id verification' stack='ReactJs, ViteJS, PostgreSQL, NodeJs, Javascript'></ProjectCard>
             </li>
             <li class="m-2">
-              <ProjectCard project='Rust Shell' description='Am implementation of Bash Shell written entirely in Rust.' stack="Rust"></ProjectCard>
+              <ProjectCard link='https://github.com/27-aditya/RustShell' project='Rust Shell' description='Am implementation of Bash Shell written entirely in Rust.' stack="Rust"></ProjectCard>
+            </li>
+            <li class="m-2">
+              <ProjectCard link='https://github.com/27-aditya/aditya.dev' project='Astro Portfolio' description='A portffolio website the one your are currently visiting written in a blazingly fast framework Astro' stack="Astro, Javascript"></ProjectCard>
             </li>
           </ul>
         </div>
@@ -56,15 +59,15 @@ import CentralButton from './CentralButton.astro';
     </div>
     <div class="col-span-3 row-span-3 m-1">
       <div class="border-darkslate-200 bg-darkslate-500 rounded-xl border-2 p-6 hover:border-cyan-300 transition-colors duration-300">
-        <h3 class="font-medium text-lg text-white mb-2">Let's Connect</h3>
+        <h3 class="font-base text-lg text-white mb-2">Let's Connect</h3>
         <div class="flex flex-col m-1">
-          <h4 class="text-gray-700 text-lg">Contact Details</h4>
-          <p>kambleaditya946@gmail.com</p>
+          <h4 class="text-cyan-400 text-lg">Contact Details</h4>
+          <p class="text-white">kambleaditya946@gmail.com</p>
         </div>
       <div class="flex flex-col m-1">
-        <h4 class="text-lg text-gray-700">Socials</h4>
-        <p> <a class="font-extrabold">></a> Github</p>
-        <p> <a class="font-extrabold">></a> LinkedIn</p>
+        <h4 class="text-lg text-cyan-400">Socials</h4>
+        <p class="text-white"> <a class="font-extrabold">></a><a href="https://github.com/27-aditya"> Github</a></p>
+        <p class="text-white"> <a class="font-extrabold">></a><a href="https://www.linkedin.com/in/aditya-kamble27"> LinkedIn</a></p>
       </div>
     </div>
     </div>
