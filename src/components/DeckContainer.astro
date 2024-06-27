@@ -35,7 +35,7 @@ import CentralButton from './CentralButton.astro';
     </div>
     <div class="col-span-4 row-span-2">
       <IndexCard title='Projects' body='Here are some of the projects I have worked upon:'>
-        <div class="h-64 overflow-y-auto">
+        <div id="scroll-container" class="h-64 overflow-y-auto">
           <ul class="list-inside">
             <li class="m-2">
               <ProjectCard link='https://github.com/27-aditya/UniVerse' project="UniVerse" description='UniVerse is an anonymous threads posting app for college communities based on college id verification' stack='ReactJs, ViteJS, PostgreSQL, NodeJs, Javascript'></ProjectCard>
@@ -44,7 +44,7 @@ import CentralButton from './CentralButton.astro';
               <ProjectCard link='https://github.com/27-aditya/RustShell' project='Rust Shell' description='Am implementation of Bash Shell written entirely in Rust.' stack="Rust"></ProjectCard>
             </li>
             <li class="m-2">
-              <ProjectCard link='https://github.com/27-aditya/aditya.dev' project='Astro Portfolio' description='A portffolio website the one your are currently visiting written in a blazingly fast framework Astro' stack="Astro, Javascript"></ProjectCard>
+              <ProjectCard link='https://github.com/27-aditya/aditya.dev' project='Astro Portfolio' description='A portfolio website, the one you are currently visiting, written in the blazingly fast Astro framework.' stack="Astro, Javascript"></ProjectCard>
             </li>
           </ul>
         </div>
